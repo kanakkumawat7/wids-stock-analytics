@@ -1,6 +1,6 @@
 # Week 1: Python Foundations + Meet the Market
 
-**Goal:** get comfortable reading Python data code, then use it to explore real NSE stock data and interpret what you see.
+> Goal: get comfortable reading Python data code, then use it to explore real NSE stock data and interpret what you see.
 ---
 
 ## Part A: Python basics
@@ -28,15 +28,15 @@ Read [market-basics.md](./market-basics.md) (about 10 minutes).
 
 ---
 ## Task
-Step 1: Run the demo
+**Step 1:** Run the demo
     python week1/explore.py --tickers RELIANCE.NS TCS.NS INFY.NS
 
 This downloads the data, computes returns, moving averages and rolling volatility, and saves plots in `outputs/`. If your internet is down, add `--synthetic` to test the code on fake data (the task itself needs real data).
 
-Step 2: Read the code
+**Step 2:** Read the code
 Open `week1/explore.py` and `src/data.py`. You don't need to write them, but you should be able to explain in your own words what each block does (what `pct_change()` computes, what `rolling(20)` does, why we cache the data). Use the Week 1 resources above for anything unfamiliar.
 
-Step 3: Your task
+**Step 3:** Your task
 Answer these in `week1/notes.md`:
 1. Which of the 3 stocks was the most volatile? How did you measure it?
 2. Plot a histogram of returns for one stock. Does it look normal? What do the tails tell you?
@@ -46,12 +46,12 @@ You'll need a few extra lines of code for questions 2 and 3, and the resources a
 
 **Stretch:** include the Nifty 50 (`^NSEI`) and compare each stock to it.
 
-## Submission
+### Submission
 - `week1/notes.md` with your answers and your histogram
 - A short entry in [`docs/PROGRESS.md`](../docs/PROGRESS.md): what you learned and where you got stuck
 - Your modified script or notebook, if you changed anything
 
-## What we look for
+### What we look for
 - You ran the code and the plots were generated
 - Your answers are backed by numbers from the output, not guesses
 - You can explain what the code does
