@@ -33,8 +33,8 @@ You will work with real Indian stock market data: download it, clean it, explore
 ## Getting started
 1. Clone the repository
    ```bash
-   git clone https://github.com/kanakkumawat7/WiDS_Stock_Analytics.git
-   cd WiDS_Stock_Analytics
+   git clone https://github.com/kanakkumawat7/wids-stock-analytics.git
+   cd wids-stock-analytics
    ```
 2. Create a virtual environment and install dependencies
    ```bash
