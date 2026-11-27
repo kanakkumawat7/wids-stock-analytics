@@ -23,12 +23,12 @@ You will work with real Indian stock market data: download it, clean it, explore
 - No finance background needed
 
 ## Weekly plan
-| Week | Topic | Materials |
-|------|-------|-----------|
-| 1 | Python foundations | [week1](./week1) |
-| 2 | Coming soon | |
-| 3 | Coming soon | |
-| 4 | Coming soon | |
+| Week | Topic | Materials | Output
+|------|-------|-----------| ------|
+| 1 | Python foundations(pandas, numpy, matplotlib, EDA, market basics) | [week1](./week1) | |
+| 2 | Coming soon | | |
+| 3 | Coming soon | | |
+| 4 | Coming soon | | |
 
 ## Getting started
 1. Clone the repository
@@ -45,11 +45,11 @@ You will work with real Indian stock market data: download it, clean it, explore
 3. Start with [Week 1](./week1/README.md)
 
 ## Ground rules
-1. Always split data by time, never randomly.
-2. Never use future information to predict the past.
+1. Always split data by time, never randomly. Train on the past, test on the future.
+2. No look-ahead. Never use future information to predict the past.
 3. Compare every model against a simple baseline.
 4. Report results honestly, including negative ones.
-5. Log your progress weekly in [`docs/PROGRESS.md`](./docs/PROGRESS.md).
+5. Log your progress and write what you learned weekly in [`docs/PROGRESS.md`](./docs/PROGRESS.md).
 
 ## Submission
 Two submissions would be required: MidTerm Submission and Final Submission. Submit your notebook or script, your plots, and a short entry in `docs/PROGRESS.md`.
