@@ -1,7 +1,6 @@
 # Week 1: Python Foundations + Meet the Market
 
-**Goal:** get comfortable with Python, NumPy, pandas and matplotlib, then use them on real NSE data.
-
+**Goal:** get comfortable reading Python data code, then use it to explore real NSE stock data and interpret what you see.
 ---
 
 ## Part A: Python basics
@@ -56,6 +55,3 @@ You'll need a few extra lines of code for questions 2 and 3, and the resources a
 - You ran the code and the plots were generated
 - Your answers are backed by numbers from the output, not guesses
 - You can explain what the code does
-- Subtracting prices instead of using `pct_change()`
-- Ignoring missing data on weekends and holidays
-- Plotting stocks with very different price scales on one axis (normalise first)
