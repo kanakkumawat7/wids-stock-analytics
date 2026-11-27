@@ -20,6 +20,19 @@ How much returns fluctuate. Usually measured as the standard deviation of return
 ## Tickers
 On `yfinance`, NSE stocks end in `.NS` (e.g. `TCS.NS`) and the Nifty 50 is `^NSEI`.
 
+## Moving averages
+The average of the last N closing prices (e.g. 20 days). It smooths out daily noise and shows the trend.
+
+## Distribution of returns
+Most days have small returns, with a few very large ones. If you plot a histogram, the "tails" are the extreme days. Stock returns usually have heavier tails than a normal (bell curve) distribution, which means big moves happen more often than a simple model would predict.
+
+## Correlation
+A number between -1 and 1 showing how closely two series move together. Near 1 means they tend to move up and down together, near 0 means no relationship, and near -1 means they move in opposite directions. In pandas: `returns.corr()`.
+
+## Adjusted prices
+`yfinance` returns prices adjusted for splits and dividends, so they can differ slightly from the prices shown on NSE's website.
+
 ## Further reading
-- Zerodha Varsity: Introduction to Stock Markets
-- Investopedia: returns and volatility
+- [Zerodha Varsity: Introduction to Stock Markets](https://zerodha.com/varsity/modules/)
+- [Investopedia: returns](https://www.investopedia.com/terms/r/return.asp)
+- [Investopedia: volatility](https://www.investopedia.com/terms/v/volatility.asp)
