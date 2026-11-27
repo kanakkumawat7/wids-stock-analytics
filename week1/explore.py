@@ -11,6 +11,7 @@ import matplotlib.pyplot as plt
 from src.data import load_prices
 
 OUT = Path(__file__).resolve().parent.parent / "outputs"
+OUT.mkdir(exist_ok=True)
 
 p = argparse.ArgumentParser()
 p.add_argument("--tickers", nargs="+", default=["RELIANCE.NS", "TCS.NS", "INFY.NS"])
