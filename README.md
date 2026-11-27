@@ -1,6 +1,7 @@
 # Stock Market Analytics: From Data to Forecasts
 
-A beginner-friendly 4-week project on stock market analytics using Python and NSE data, from data collection and analysis to forecasting.
+A beginner-friendly 4-week project for Winter in Data Science (WiDS) on predicting Indian stock movements using Python and NSE data, from data collection and analysis to forecasting.
+Each week has a guide (README.md), a runnable starter script, and a task for you to complete yourself
 
 **WiDS 6.0 | The Analytics Club**
 
@@ -19,13 +20,13 @@ You will work with real Indian stock market data: download it, clean it, explore
 - Writing up results clearly
 
 ## Prerequisites
-- Basic programming exposure (not compulsory to have)
+- Basic programming exposure would be helpful but not compulsory to have
 - No finance background needed
 
 ## Weekly plan
 | Week | Topic | Materials | Output
 |------|-------|-----------| ------|
-| 1 | Python foundations(pandas, numpy, matplotlib, EDA, market basics) | [week1](./week1) | |
+| 1 | Python foundations (pandas, numpy, matplotlib, EDA, market basics) | [week1](./week1) | price/returns/volatility plots |
 | 2 | Coming soon | | |
 | 3 | Coming soon | | |
 | 4 | Coming soon | | |
@@ -52,7 +53,7 @@ You will work with real Indian stock market data: download it, clean it, explore
 5. Log your progress and write what you learned weekly in [`docs/PROGRESS.md`](./docs/PROGRESS.md).
 
 ## Submission
-Two submissions would be required: MidTerm Submission and Final Submission. Submit your notebook or script, your plots, and a short entry in `docs/PROGRESS.md`.
+Two submissions would be required: Mid-Term Submission and Final Submission. Submit your notebook or script, your plots, and a short entry in `docs/PROGRESS.md`.
 
 ## Disclaimer
 This project is for educational purposes only and is not financial advice.
