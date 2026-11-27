@@ -28,34 +28,34 @@
 Read [market-basics.md](./market-basics.md) (about 10 minutes).
 
 ---
+## Task
+Step 1: Run the demo
+    python week1/explore.py --tickers RELIANCE.NS TCS.NS INFY.NS
 
-## Task: Meet the Market
-1. Download at least 3 years of daily data for 3 NSE stocks (e.g. `RELIANCE.NS`, `TCS.NS`, `INFY.NS`) and the Nifty 50 index (`^NSEI`) using `yfinance`.
-2. With pandas, compute:
-   - daily returns
-   - 20-day rolling volatility
-   - cumulative returns
-3. Create these plots (with titles, axis labels and legends):
-   - closing prices
-   - histogram of daily returns
-   - rolling volatility
-   - cumulative returns of each stock vs Nifty 50
-4. Build a summary table: mean return, standard deviation, best day and worst day for each stock.
-5. Write 5-6 lines: which stock was the most volatile? Do the stocks move with the Nifty? Did you notice any unusual spikes or dips?
+This downloads the data, computes returns, moving averages and rolling volatility, and saves plots in `outputs/`. If your internet is down, add `--synthetic` to test the code on fake data (the task itself needs real data).
 
-**Stretch goals:** a correlation matrix of returns, or how the stocks behaved during the March 2020 crash.
+Step 2: Read the code
+Open `week1/explore.py` and `src/data.py`. You don't need to write them, but you should be able to explain in your own words what each block does (what `pct_change()` computes, what `rolling(20)` does, why we cache the data). Use the Week 1 resources above for anything unfamiliar.
+
+Step 3: Your task
+Answer these in `week1/notes.md`:
+1. Which of the 3 stocks was the most volatile? How did you measure it?
+2. Plot a histogram of returns for one stock. Does it look normal? What do the tails tell you?
+3. Compute the correlation of daily returns between the 3 stocks. Which pair moves most closely together?
+
+You'll need a few extra lines of code for questions 2 and 3, and the resources above are enough to figure them out. Add them to `explore.py` or to a new notebook.
+
+**Stretch:** include the Nifty 50 (`^NSEI`) and compare each stock to it.
 
 ## Submission
-- Your notebook or `.py` script
-- The plots
-- An entry in [`docs/PROGRESS.md`](../docs/PROGRESS.md)
+- `week1/notes.md` with your answers and your histogram
+- A short entry in [`docs/PROGRESS.md`](../docs/PROGRESS.md): what you learned and where you got stuck
+- Your modified script or notebook, if you changed anything
 
 ## What we look for
-- Code runs from start to finish
-- Plots are clear and labelled
-- The write-up contains at least one real insight, not just numbers
-
-## Common mistakes
+- You ran the code and the plots were generated
+- Your answers are backed by numbers from the output, not guesses
+- You can explain what the code does
 - Subtracting prices instead of using `pct_change()`
 - Ignoring missing data on weekends and holidays
 - Plotting stocks with very different price scales on one axis (normalise first)
